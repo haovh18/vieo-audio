@@ -23,9 +23,6 @@ youtube-cookies.txt
 .env
 .env.*
 
-# Cloned third-party repositories
-code/VideoMAEv2/
-
 # Python and tooling artifacts
 __pycache__/
 *.py[cod]
