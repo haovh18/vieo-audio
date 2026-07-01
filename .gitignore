@@ -8,8 +8,7 @@ envs/
 datasets/
 weights/
 checkpoints/
-MuQ-MuLan-large/
-MuQ-large-msd-iter/
+outputs/
 *.pt
 *.pth
 *.ckpt

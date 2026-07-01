@@ -13,6 +13,25 @@
 
 模型权重、数据集、conda 环境、wheel 缓存和 cookies 不在 Git 中。
 
+## 目录结构
+
+```text
+weights/
+├── imagebind/imagebind_huge.pth
+├── muq/
+│   ├── MuQ-large-msd-iter/
+│   └── MuQ-MuLan-large/
+└── videomae/hf_videomae_base/
+
+outputs/
+├── imagebind/baseline/
+└── muq_videomae/
+```
+
+`outputs/imagebind/` 只保存 ImageBind 实验，`outputs/muq_videomae/` 保存
+MuQ 音频特征与 VideoMAE 视频特征相关的检查、特征和检索结果。权重统一放在
+`weights/`，实验脚本不再从项目根目录或隐藏 checkpoint 目录加载模型。
+
 ## 新服务器部署
 
 前置条件：
@@ -123,7 +142,8 @@ PY
 - `envs/`：conda 环境
 - `.wheels/`：下载缓存
 - `datasets/`：数据集
-- `weights/`、`checkpoints/`、MuQ 模型目录：权重
+- `weights/`：ImageBind、MuQ、MuQ-MuLan 和 VideoMAE 权重
+- `outputs/`：按模型方案区分的本地实验产物
 - `youtube-cookies.txt`：敏感凭据
 
 `code/VideoMAEv2` 作为 Git submodule 管理，以固定上游代码版本并避免复制
