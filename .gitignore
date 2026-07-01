@@ -1,0 +1,42 @@
+# Local environments and package caches
+envs/
+.wheels/
+.conda/
+.cache/
+
+# Models, checkpoints, and datasets
+datasets/
+weights/
+checkpoints/
+MuQ-MuLan-large/
+MuQ-large-msd-iter/
+*.pt
+*.pth
+*.ckpt
+*.bin
+*.safetensors
+
+# Download credentials and local secrets
+youtube-cookies.txt
+*.cookie
+*.cookies
+.env
+.env.*
+
+# Cloned third-party repositories
+code/VideoMAEv2/
+
+# Python and tooling artifacts
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# OS and archive artifacts
+__MACOSX/
+.DS_Store
+*.zip
+*.tar
+*.tar.gz
